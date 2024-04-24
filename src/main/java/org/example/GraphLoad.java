@@ -53,7 +53,7 @@
 //    private static String tokenEndpoint = "https://login.partner.microsoftonline.cn/a07a5f5d-2291-4551-9c0e-5b98a8a5dffd/oauth2/v2.0/token";
 //    private static String resourceId = "https://microsoftgraph.chinacloudapi.cn/.default";
 //    private static String teantId = "a07a5f5d-2291-4551-9c0e-5b98a8a5dffd";
-//    private static String mailbox = "abg.products@sensetime.com";
+//    private static String mailbox = "abg.products@outlook.com";
 //
 //    public static void main(String[] args) throws InterruptedException, IOException {
 //        getClient();
@@ -145,7 +145,7 @@
 //        LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
 //        Recipient toRecipients = new Recipient();
 //        EmailAddress emailAddress = new EmailAddress();
-//        emailAddress.address = "xiangjianbo_vendor@sensetime.com";
+//        emailAddress.address = "xiangjianbo_vendor@outlook.com";
 //        toRecipients.emailAddress = emailAddress;
 //        toRecipientsList.add(toRecipients);
 //        message.toRecipients = toRecipientsList;
@@ -163,7 +163,7 @@
 //        AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
 //        message.attachments = attachmentCollectionPage;
 //        //以指定用户邮箱发送邮件
-//        iGraphServiceClient.users("abg.products@sensetime.com")
+//        iGraphServiceClient.users("abg.products@outlook.com")
 //                .sendMail(message,false)
 //                .buildRequest()
 //                .post();

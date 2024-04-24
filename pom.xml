@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+
         <dependency>
             <groupId>com.microsoft.graph</groupId>
             <artifactId>microsoft-graph</artifactId>
@@ -99,7 +100,12 @@
             <artifactId>opencsv</artifactId>
             <version>5.4</version>
         </dependency>
-<!--        <dependency>-->
+        <dependency>
+            <groupId>com.azure.resourcemanager</groupId>
+            <artifactId>azure-resourcemanager-botservice</artifactId>
+            <version>1.0.0-beta.5</version>
+        </dependency>
+        <!--        <dependency>-->
 <!--            <groupId>apache.httpcomponents</groupId>-->
 <!--            <artifactId>httpcore</artifactId>-->
 <!--            <version>4.4.5</version>-->
