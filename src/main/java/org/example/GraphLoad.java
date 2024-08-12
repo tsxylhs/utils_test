@@ -48,11 +48,11 @@
 //    private static String clientId = "31618fcd-333a-4dd8-b227-a894bc559885";
 //
 //   public static IGraphServiceClient graphClient = null;
-//    private static String clientSecret="xZ61r-.33VmPu-jHxmLJ571ALbjw8.XE6_";
+//    private static String clientSecret="xZ61r-.33VmPu-jHxmLJ571ALxxbjw8.XE6_";
 //    private static String grantType = "client_credentials";
-//    private static String tokenEndpoint = "https://login.partner.microsoftonline.cn/a07a5f5d-2291-4551-9c0e-5b98a8a5dffd/oauth2/v2.0/token";
+//    private static String tokenEndpoint = "https://login.partner.microsoftonline.cn/a07a5f5d-2291-4551xx-9c0e-xx/oauth2/v2.0/token";
 //    private static String resourceId = "https://microsoftgraph.chinacloudapi.cn/.default";
-//    private static String teantId = "a07a5f5d-2291-4551-9c0e-5b98a8a5dffd";
+//    private static String teantId = "a07a5f5d-2291-4551-9c0e-5b98a8xxa5dffd";
 //    private static String mailbox = "abg.products@outlook.com";
 //
 //    public static void main(String[] args) throws InterruptedException, IOException {

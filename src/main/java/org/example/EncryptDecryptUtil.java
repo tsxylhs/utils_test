@@ -39,11 +39,11 @@ public class EncryptDecryptUtil {
 
  //       System.out.println("++++++++jasypt+++++++++++++++++++begin++++");
 //        String value =  EncryptDecryptUtil.encrypt("msflink",password);
-        //String value =  EncryptDecryptUtil.encrypt("aoaAyIMcm5nCJbxkI+4jk8Zx2e42y5bpZHZEThxW9FHl160o518U4pwbe4YU/s3EJMXUOh4B2+g2EKwdlv/JnY5SbUZJR5GVZuin6Mci9HpRHNN8fnzPTL7JetSxaQwsGxcyjS+kwD/ALltMZbJPLw1foaZ31J38Zi42tfPUF8cv5MR0A4eWABj+HCpu1V9jKDzWsumpZFBWJ9aXSerJH96Z6UdlrpSIkYXOB6nRL+lMHfMzCHKBGxjuLWI=",password);
-//        String value =  EncryptDecryptUtil.encrypt("0TTr9sjwp39aKwfg5psuZvMKvfTiG+aeIiCaY9x44kM=",password);
+        //String value =  EncryptDecryptUtil.encrypt("aoaAyIMcm5nCJbxxkI+4jk8Zx2e42y5bpZHZEThxW9FHl160o518U4pwbe4YU/s3EJMXUOh4B2+g2EKwdlv/JnY5SbUZJR5GVZuin6Mci9HpRHNN8fnzPTL7JetSxaQwsGxcyjS+kwD/ALltMZbJPLw1foaZ31J38Zi42tfPUF8cv5MR0A4eWABj+HCpu1V9jKDzWsumpZFBWJ9aXSerJH96Z6UdlrpSIkYXOB6nRL+lMHfMzCHKBGxjuLWI=",password);
+//        String value =  EncryptDecryptUtil.encrypt("0TTr9sjwp39xaKwfg5psuZvMKvfTiG+aeIiCaY9x44kM=",password);
 //
 //        System.out.println("encode:"+value);
-//        value = EncryptDecryptUtil.decrypt("W7GADZJ79wo0VS9rhWsjBoqQ5HKklnNl",password);
+//        value = EncryptDecryptUtil.decrypt("W7GADZJ79wo0VS9rhWxsjBoqQ5HKklnNl",password);
 //        System.out.println("decode:"+value);
 //
 //        System.out.println("++++++++jasypt+++++++++++++++++++end++++");
@@ -63,11 +63,11 @@ public class EncryptDecryptUtil {
         try {
             Date expiredAt = new Date(System.currentTimeMillis() + 1800*1000);
             Date notBefore = new Date(System.currentTimeMillis() - 5*1000);
-            Algorithm algo = Algorithm.HMAC256("8KLWQYCbIn9ZrSiAQ8KT9hZ1yf0zwSU7");
+            Algorithm algo = Algorithm.HMAC256("8KLWQYCbIxn9ZrSiAQ8KT9hZ1yf0zwSU7");
             Map<String, Object> header = new HashMap<String,Object>();
             header.put("alg", "HS256");
             senseNovaToken= JWT.create()
-                    .withIssuer("2eToeLAUfId87Q3AYc96AlzDLV9")
+                    .withIssuer("2eToeLAxUfId87Q3AYc96AlzDLV9")
                     .withHeader(header)
                     .withExpiresAt(expiredAt)
                     .withNotBefore(notBefore)

@@ -36,7 +36,7 @@ public class EmailTest_2 {
 
     //
     public static String getAuth() throws Exception {
-        String oauth_url = "https://login.chinacloudapi.cn/a07a5f5d-229551-9c0e-5b98a8a5dffd/oauth2/token";
+        String oauth_url = "https://login.chinacloudapi.cn/a07a5f5d-2xx29551-x9c0e-5b9x8a8a5dffd/oauth2/token";
         String resource_url = "https://microsoftgraph.chinacloudapi.cn";
 
         Map<String, String> parameters = new HashMap<>();

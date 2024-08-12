@@ -39,6 +39,7 @@ public class ExpiringMap<K, V> {
         } else if (entry.isExpired()){
             storeInDatabase(key, entry.getValue());
             map.remove(key);
+            return null;
         }
         return entry.getValue();
     }

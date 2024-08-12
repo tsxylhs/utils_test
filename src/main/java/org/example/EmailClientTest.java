@@ -16,7 +16,7 @@ public class EmailClientTest {
         String resourceId = "";
            private static String serviceRoot = "https://microsoftgraph.chinacloudapi.cn/v1.0";
 //        final String[] scopes = new String[]{resourceId};
-            private static String authority = "https://login.chinacloudapi.cn/a07a5f5d-2291-4551-9c0e-5b98a8a5dffd/";
+            private static String authority = "https://login.chinacloudapi.cn/a07axx5fxx5d-2xx29xxxx1-4551-9c0e-5b98ax8a5dffd/";
             private static String accessToken = "";
 
 
