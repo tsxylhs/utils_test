@@ -1,0 +1,41 @@
+Received: from BJXPR01MB0519.CHNPR01.prod.partner.outlook.cn
+ (2406:e500:c211:15::14) by NT0PR01MB1167.CHNPR01.prod.partner.outlook.cn with
+ HTTPS; Wed, 24 Apr 2024 06:36:56 +0000
+Received: from BJXPR01MB0535.CHNPR01.prod.partner.outlook.cn (10.43.32.82) by
+ BJXPR01MB0519.CHNPR01.prod.partner.outlook.cn (10.43.32.78) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7472.44; Wed, 24 Apr 2024 06:36:55 +0000
+Received: from BJXPR01MB0535.CHNPR01.prod.partner.outlook.cn
+ ([fe80::976:ac61:8207:797c]) by BJXPR01MB0535.CHNPR01.prod.partner.outlook.cn
+ ([fe80::976:ac61:8207:797c%3]) with mapi id 15.20.7472.044; Wed, 24 Apr 2024
+ 06:36:55 +0000
+From: =?gb2312?B?wsC68cun?= <lvhoushuai@outlook.com>
+To: SenseSupport <sensesupport@outlook.com>
+Subject: Test file send
+Thread-Topic: Test file send
+Thread-Index: AQHalhHMYR+QNp0nDUy9D4ZVODpZWw==
+Date: Wed, 24 Apr 2024 06:36:55 +0000
+Message-ID: <34448B37-77AF-40DE-9913-5CE41465DB94@outlook.com>
+Accept-Language: zh-CN, en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	BJXPR01MB0535.CHNPR01.prod.partner.outlook.cn
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	d5e57abf-7c78-4dcf-e161-08dc6428ef02
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944499075)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	+MYH6hsS1YsXO1JyN0dTrBaAiCN4WBqRxKthbUsUUmMh7opdN7hYaqIN2oj6AgmXd7zCBYQEKo3IleyxqcGUUaESO7Aw8By8tfrUTb2wpPZsDFP+6pIM1k+7M695w/gUh2f4QeCwGqmwtAJ5qeA+xeBIshPpSAbmM0Yk3N5pTCyA9izh9JAkw7avxcPWYgDxzCEKdHOzt8JSY3Y8OHPhqFuB8X/sXc2ShJKRL151SWv7to910v6zXdSr4UL3aT/WSIqAltfHMJAnD/AcDMuP1yNOMX/aAkdDK9k2sf6oYXxNrAypm0mfxBlPUOwO8QAgPjJR9EXMDYEB4KqyIt3eWhPYoPCPtxOXQ+1AAt9vE9k/IFDZ8lBxlPm7Ew7lsiGPXmw6h5kPVcA5EyouarD32ZTHNRbyIqMAqWcIME3lrlEiBXZ35TvYZFGv5cF7khDjrpXTP3FnmRFqjyNW/Clwrbfxr9jJZFSqErJNAbj/vu+ULqhT9YrVmfKCINK2TmBfBz7t5rZ9HYZUqq9aXuznplDMnVXGX4lun930Rcwr9bI7LSgcEJFTM0Tu6p2BtONhlUTEAdzWHAPP0WZOZG2cpCdpVUexlEFGMtbT6N6eDP5u9uU55TuJQTqjd5BdBPBjBtEC5b15bYBohoEyn4FSH5gxdtYtqOkOoDlE+q4NCVls+qXXWctFxOBY83q6nU4tVgoI+QA2Tu9Qr8d5JVOUARYBZf+50QePEueAm+nB11o=
+Content-Type: text/plain; charset="gb2312"
+Content-ID: <E9B19A209AF8A140B33E5E9E161C1028@CHNPR01.prod.partner.outlook.cn>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+VGVzdCBmaWxlIHNlbmQNCg==
