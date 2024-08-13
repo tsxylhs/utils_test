@@ -8,7 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
@@ -17,32 +19,40 @@ public class testcsv {
 
 
 
+        IdKeys idKeys=new IdKeys();
+        idKeys.setMonitorId("2");
+        idKeys.setGateDbId("2");
+        IdKeys idKeys1=new IdKeys();
+        idKeys1.setMonitorId("1");
+        idKeys1.setGateDbId("1");
+        ExpiringMap<IdKeys , List<Object>> expiringMap = new ExpiringMap<>(1,TimeUnit.SECONDS);
+        expiringMap.put(idKeys,new ArrayList<>(),5,TimeUnit.SECONDS);
 
+        expiringMap.put(idKeys1,new ArrayList<>(),10,TimeUnit.SECONDS);
+       Set<IdKeys> idKeysSet= expiringMap.findKeys(IdKeys::getMonitorId,"1");
+        Iterator<IdKeys> iterator = idKeysSet.iterator();
+        while (iterator.hasNext()) {
+            IdKeys idKeys2=iterator.next();
+            System.out.println("idkeys:"+idKeys2.toString());
 
-        ExpiringMap<String , String > expiringMap = new ExpiringMap<>(5,TimeUnit.SECONDS,1,TimeUnit.SECONDS );
-        expiringMap.put("test","null");
-        Thread.sleep(3000);
-        expiringMap.put("test","更新");
-        Thread.sleep(1000);
-        expiringMap.put("test1","1");
-        Thread.sleep(3000);
-        expiringMap.put("test1","123234");
-        Thread.sleep(1000);
-        expiringMap.put("test2","12");
-        Thread.sleep(1000);
-        expiringMap.put("test3","test3");
-        Thread.sleep(1000);
-        expiringMap.put("test4","test4");
-        Thread.sleep(1000);
-        Thread.sleep(1000);
-        System.out.println(expiringMap.get("test")); // 输出: value1
-        System.out.println(expiringMap.get("test1")); // 输出: value1
-//        Thread.sleep(14000);
-        System.out.println(expiringMap.get("test2")); // 输出: value1
-//        Thread.sleep(15000);
-        System.out.println(expiringMap.get("test3")); // 输出: value1
-//        Thread.sleep(16000);
-        System.out.println(expiringMap.get("test4")); // 输出: value1
+            List test= expiringMap.get(idKeys2);
+            test.add("eteew");
+            expiringMap.put(idKeys2,test,0l);
+            expiringMap.get(idKeys2).add("teststes");
+            Thread.sleep(13000);
+            expiringMap.get(idKeys2).add("teststes3322");
+        }
+        System.out.println(expiringMap.get(idKeys));
+
+        System.out.println(expiringMap.get(idKeys1));
+//        System.out.println(expiringMap.get("test")); // 输出: value1
+//        System.out.println(expiringMap.get("test1")); // 输出: value1
+////        Thread.sleep(14000);
+//        System.out.println(expiringMap.get("test2")); // 输出: value1
+////        Thread.sleep(15000);
+//        System.out.println(expiringMap.get("test3")); // 输出: value1
+////        Thread.sleep(16000);
+//        System.out.println(expiringMap.get("test4")); // 输出: value1
 //        System.out.println(expiringMap.get("test")); // 输出: value1
 //        System.out.println(expiringMap.get("test1")); // 输出: value1
 //        System.out.println(expiringMap.get("test2")); // 输出: value1
