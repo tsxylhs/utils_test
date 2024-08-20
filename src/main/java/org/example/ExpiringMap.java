@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -76,10 +73,18 @@ public class ExpiringMap<K, V> {
             }
         }
 
-        private void storeInDatabase(K key, V value) {
-            // 实现存储逻辑，例如使用 JDBC 将数据存储到数据库中
-            System.out.println("Storing in database: " + key + " -> " + value);
+    private void storeInDatabase(K key, V value) {
+        if(key instanceof IdKeys){
+            IdKeys idKeys=  (IdKeys)key;
+            System.out.println(idKeys.gateDbId+"---------"+idKeys.getMonitorId());
         }
+        if(value instanceof ArrayList<?>){
+            ArrayList list=(ArrayList) value;
+            System.out.println("list:========>"+list);
+        }
+        // 实现存储逻辑，例如使用 JDBC 将数据存储到数据库中
+        /// System.out.println("Storing in database: " + key + " -> " + value);
+    }
 
         private class TimedEntry<V> {
             private V value;

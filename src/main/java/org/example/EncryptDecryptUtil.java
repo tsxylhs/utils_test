@@ -27,24 +27,24 @@ public class EncryptDecryptUtil {
 
 
     public  static void main(String[] args){
-        //System.out.println(" input password："+args[0]);
- //       String password = "youtellme";
-//        System.out.println("++++++++aes+++begin++++++++++++++++++++");
-//        String passfactorASE =  EncryptDecryptUtil.encryptASE(passfactor);
-//        System.out.println("++++++++aes encrypt:"+passfactorASE);
-//        String password = EncryptDecryptUtil.decryptASE(passfactorASE);
-//        System.out.println("++++++++aes decrypt:"+password);
-//        System.out.println("++++++++aes+++end++++++++++++++++++++");
+
+         String password = "youtellme";
+//         System.out.println("++++++++aes+++begin++++++++++++++++++++");
+//        String passfactorASE =  EncryptDecryptUtil.encryptASE(password);
+//          System.out.println("++++++++aes encrypt:"+passfactorASE);
+//         String password = EncryptDecryptUtil.decryptASE(passfactorASE);
+//         System.out.println("++++++++aes decrypt:"+password);
+//         System.out.println("++++++++aes+++end++++++++++++++++++++");
 
 
- //       System.out.println("++++++++jasypt+++++++++++++++++++begin++++");
-//        String value =  EncryptDecryptUtil.encrypt("msflink",password);
+          System.out.println("++++++++jasypt+++++++++++++++++++begin++++");
+        String value =  EncryptDecryptUtil.encrypt("mstailgating",password);
         //String value =  EncryptDecryptUtil.encrypt("aoaAyIMcm5nCJbxxkI+4jk8Zx2e42y5bpZHZEThxW9FHl160o518U4pwbe4YU/s3EJMXUOh4B2+g2EKwdlv/JnY5SbUZJR5GVZuin6Mci9HpRHNN8fnzPTL7JetSxaQwsGxcyjS+kwD/ALltMZbJPLw1foaZ31J38Zi42tfPUF8cv5MR0A4eWABj+HCpu1V9jKDzWsumpZFBWJ9aXSerJH96Z6UdlrpSIkYXOB6nRL+lMHfMzCHKBGxjuLWI=",password);
-//        String value =  EncryptDecryptUtil.encrypt("0TTr9sjwp39xaKwfg5psuZvMKvfTiG+aeIiCaY9x44kM=",password);
+        // String value =  EncryptDecryptUtil.encrypt("0TTr9sjwp39xaKwfg5psuZvMKvfTiG+aeIiCaY9x44kM=",password);
 //
-//        System.out.println("encode:"+value);
-//        value = EncryptDecryptUtil.decrypt("W7GADZJ79wo0VS9rhWxsjBoqQ5HKklnNl",password);
-//        System.out.println("decode:"+value);
+        System.out.println("encode:"+value);
+         value = EncryptDecryptUtil.decrypt("iYNYAPItxYIcppK8FION7Ca1ASKK9X50",password);
+         System.out.println("decode:"+value);
 //
 //        System.out.println("++++++++jasypt+++++++++++++++++++end++++");
  //       refreshToken();

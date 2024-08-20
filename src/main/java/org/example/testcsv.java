@@ -21,26 +21,28 @@ public class testcsv {
 
         IdKeys idKeys=new IdKeys();
         idKeys.setMonitorId("2");
-        idKeys.setGateDbId("2");
+        idKeys.setGateDbId("2133");
         IdKeys idKeys1=new IdKeys();
-        idKeys1.setMonitorId("1");
+        idKeys1.setMonitorId("12");
         idKeys1.setGateDbId("1");
         ExpiringMap<IdKeys , List<Object>> expiringMap = new ExpiringMap<>(1,TimeUnit.SECONDS);
         expiringMap.put(idKeys,new ArrayList<>(),5,TimeUnit.SECONDS);
 
         expiringMap.put(idKeys1,new ArrayList<>(),10,TimeUnit.SECONDS);
-       Set<IdKeys> idKeysSet= expiringMap.findKeys(IdKeys::getMonitorId,"1");
+       Set<IdKeys> idKeysSet= expiringMap.findKeys(IdKeys::getMonitorId,"12");
         Iterator<IdKeys> iterator = idKeysSet.iterator();
         while (iterator.hasNext()) {
             IdKeys idKeys2=iterator.next();
             System.out.println("idkeys:"+idKeys2.toString());
-
             List test= expiringMap.get(idKeys2);
             test.add("eteew");
             expiringMap.put(idKeys2,test,0l);
-            expiringMap.get(idKeys2).add("teststes");
+            expiringMap.get(idKeys2);
             Thread.sleep(13000);
-            expiringMap.get(idKeys2).add("teststes3322");
+            List test2= expiringMap.get(idKeys2);
+            if (test2!=null){
+                test2.add("ee");
+            }
         }
         System.out.println(expiringMap.get(idKeys));
 
